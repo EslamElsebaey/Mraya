@@ -1,0 +1,232 @@
+footer{
+    background-color: #f9f8f6;
+    padding: 70px 0 40px 0;
+}
+
+.footer-items-parent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .footer-title{
+        font-size: 16px;
+        margin-top: 0;
+       margin-bottom: 25px;
+        color: #000000;
+        font-weight: 300;
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 20px;
+            color: #666666;
+            margin-right: 35px;
+            transition: all linear .2s;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+}
+
+.footer-item{
+    .mraya-text{
+        font-size: 14px;
+        color: #000000;
+        font-weight: 300;
+        margin-bottom: 20px;
+      
+    }
+    .quick-drop{
+        li a {
+            font-size: 14px;
+            line-height: 30px;
+            color: #666666;
+            font-weight: 300;
+            transition: all linear .2s;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+    .newsletter-text{
+        font-size: 14px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: 300;
+        max-width: 360px;
+    }
+}
+
+.message {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    .send {
+        font-size: 22px;
+        color: #000;
+        position: absolute;
+        inset-inline-end: 15px;
+        transform:   translateY(-50%);
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all linear .3s;
+        i{
+            transition: all linear .2s;
+        }
+        &:hover{
+            i{
+                color: $second-color;
+            }
+        }
+    }
+    input{
+        width: 360px;
+        height: 44px;
+        background-color: #ffffff;
+        transition: all linear .3s;
+        max-width: 100%;
+        outline: none ;
+        border: 1px solid transparent;
+        color: #000;
+        padding: 0 50px 0 20px;
+        font-size: 16px;
+        font-weight: 400;
+        &::-webkit-input-placeholder{
+            font-size: 12px;
+            color: #808080;
+            font-weight: 300;
+        }
+        &:focus{
+            border-color: $main-color ;
+        }
+    }
+   
+}
+.footer-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img:first-of-type{
+        margin-right: 15px;
+    }
+}
+
+.copyright{
+    .text , p{
+        font-size: 12px;
+        color: #000000;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+  
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasawk{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #808080;
+    font-weight: 500;
+    img{
+        margin-inline-start: 5px;
+    }
+    &:hover{
+        text-decoration: none;
+        color: #808080;
+    }
+    }
+    .heart{
+        color: red;
+        font-size: 12px;
+        margin: 0 3px;
+    }
+
+    .arrow-rotate::after {
+        transform:  rotate(180deg)  ;
+        
+    }
+
+
+@include max-992{
+    .footer-items-parent{
+        flex-wrap: wrap;
+    }
+    .footer-item{
+        width: calc(50% - 10px);
+    }
+}
+
+@include max-768{
+    .footer-imgs img {
+        width: 50px;
+    }
+    .footer-items-parent .footer-title{
+        margin-bottom: 0;
+        text-transform: capitalize;
+        cursor: pointer;
+        font-size: 17px;
+        position: relative;
+        &::after {
+            font-size: 15px;
+            content: "\f107";
+            transition: all linear .3s;
+            font-family: "line Awesome free";
+            position: absolute;
+            font-weight: 900;
+            inset-inline-end: 0;
+            top: 0;
+        }
+    }
+
+    .footer-items-parent{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .footer-item{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .quick-drop{
+        display: none;
+        // padding-top: 10px;
+        li:first-of-type{
+            padding-top: 10px;
+        }
+    }
+    .social-drop{
+        padding-top: 15px;
+    }
+    .nested{
+        padding-top: 12px;
+    }
+    .footer-item .newsletter-text{
+        text-align: center;
+        max-width: 100%;
+    }
+    footer{
+        padding: 50px 0 40px 0;
+    }
+    
+    .copyright{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+   
+    .copyright .text{
+        order: 2;
+        margin: 10px 0;
+    }
+    .tasawk{
+        order: 3;
+    }
+}

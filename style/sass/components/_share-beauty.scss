@@ -1,0 +1,42 @@
+.share-beauty{
+    background-color: #a96c4f;
+    padding: 85px 0 ;
+    .share-content{
+        text-align: center;
+    }
+    .part-text{
+        font-size: 18px;
+        color: #f0c6b2;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 41px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+}
+
+
+@include max-768{
+    .share-beauty{
+        padding: 50px 0;
+    }
+    .share-beauty .part-text{
+        font-size: 16px;
+    }
+    .share-beauty h3{
+        font-size: 20px;
+    }
+    .share-beauty p{
+        font-size: 15px;
+    }
+}

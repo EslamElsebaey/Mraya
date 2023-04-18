@@ -1,0 +1,224 @@
+
+// tabs
+.item-parent{
+    position: relative;
+}
+
+
+
+//  our programs  section 
+.products{
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after , .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+        display: none;
+    }
+   padding-bottom: 100px;
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        display: none;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        &:hover{
+            i{
+                color: #000000;
+            }
+        }
+        i{
+            font-size: 24px;
+            line-height: 20px;
+            color: #cccccc;
+            transition: all linear .2s;
+        }
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: -50px;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: -50px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top: 40%;
+    }
+}
+
+
+
+.products{
+    .nav-tabs{
+        border: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .nav-tabs > li >a{
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+        color: #b3b3b3;
+        background-color: transparent;
+        border: none;
+    }
+    .nav-tabs>li>a{
+        font-size: 30px;
+        color: #b3b3b3;
+        font-weight: 300;
+        text-align: center;
+    }
+    .nav > li > a:focus, .nav > li > a:hover{
+        background-color: transparent;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+        color: #000000;
+    }
+    .nav-tabs>li{
+        float: none;
+        margin: 0 15px;
+    }
+    .nav-tabs .active{
+        position: relative;
+    }
+}
+
+
+
+.item-desc{
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 0 0 0;
+    border-top: none;
+    > a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .product-name {
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        font-weight: 300;
+        margin: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        text-align: start;
+        -webkit-box-orient: vertical;
+        text-transform: capitalize;
+        transition: all linear .2s;
+        margin-bottom: 15px;
+        &:hover{
+            color: $second-color;
+        }
+    }
+}
+.price-sec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    span{
+        font-weight: 300;
+    }
+    .current-price{
+    font-size: 16px;
+    color: #000000;
+    }
+    .deleted-price{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #808080;
+    margin-left: 10px;
+    }
+}
+
+
+.img-holder{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        transition: all linear .2s;
+    }
+}
+.product-hover{
+    width: 100%;
+    // overflow: hidden;
+    position: relative;
+}
+
+.product-item{
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+        .product-name{
+            color: $second-color;
+        }
+    }
+    
+}
+
+.products{
+    .shop-btn{
+        text-transform: uppercase;
+        margin-top: 40px;
+        border: 1px solid transparent;
+        &:hover{
+            border-color: #000;
+        }
+    }
+}
+
+
+@include max-768{
+    .products .nav-tabs{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: center;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+    .products{
+        padding-bottom: 70px;
+        .swiper-button-next, .swiper-button-prev{
+            display: none;
+        }
+    }
+    .products .nav-tabs > li > a{
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .price-sec{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .price-sec .deleted-price{
+        margin-left: 0;
+    }
+    .price-sec .current-price{
+        margin-bottom: 7px;
+    }
+    .item-desc{
+        padding: 10px;
+    }
+    .item-desc .product-name{
+        text-align: center;
+        -webkit-line-clamp : 2 ;
+        margin-bottom: 12px;
+    }
+}
+
+
+
+
+
+
