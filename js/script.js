@@ -13,16 +13,10 @@ $(document).ready(function () {
   // show and hide search box
 
   $(".openMySearch").click(function(){
-    $(".search-holder-parent").fadeToggle(200);
-    $("body").addClass("overflow-hidden-body") ;
-    $(".search-holder-input").addClass("open-search");
+    $(".search-holder-parent").toggle();
   })
   $(".closeSearh-btn").click(function(){
-      $(".search-holder-input").removeClass("open-search");
-      setTimeout(() => {
-      $(".search-holder-parent").fadeToggle(300);
-    }, 200);
-    $("body").removeClass("overflow-hidden-body") ;
+      $(".search-holder-parent").toggle();
    
   })
 
@@ -30,11 +24,16 @@ $(document).ready(function () {
 /***************************************************************************************** */
 // open and close sideBar
 
-$(".menu-bars").click(function(){
-  $(this).toggleClass("open-bars");
+$(".bars").click(function(){
   $("header").toggleClass("filter-drop");
   $("nav").toggleClass("reset-left");
   $("body").toggleClass("overflowHidden");
+})
+
+
+$(".closeBtn").click(function(){
+  $("nav").removeClass("reset-left");
+  $("body").removeClass("overflowHidden");
 })
 
 
@@ -81,7 +80,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 
 const bestseller = new Swiper('.bestseller .swiper', {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -109,7 +108,7 @@ const bestseller = new Swiper('.bestseller .swiper', {
 });
 const specials = new Swiper('.specials .swiper', {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -137,7 +136,7 @@ const specials = new Swiper('.specials .swiper', {
 });
 const newarrivals = new Swiper('.newarrivals .swiper', {
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -173,9 +172,11 @@ const newarrivals = new Swiper('.newarrivals .swiper', {
 
 $(window).scroll(function(){
   if($(window).scrollTop() > 150){
-    $(".toTop").addClass("showToTop")
+    $(".toTop").addClass("showToTop");
+    $(".close-sec button").addClass("close-margin")
   }else{
-    $(".toTop").removeClass("showToTop")
+    $(".toTop").removeClass("showToTop");
+    $(".close-sec button").removeClass("close-margin")
   }
 })
 
@@ -209,6 +210,7 @@ if($(window).width() < 768){
     
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 40) {
+    $(".search-holder-parent").hide();
     $("header").addClass("fixed");
     if($(window).width() > 768){
       $(".logo img").addClass("logo-img-big");

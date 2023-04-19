@@ -1,10 +1,25 @@
 
 .mainBanner{
+    .banner-desc{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 100%;
+        h2{
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 300;
+            text-align: center;
+            margin: 0;
+        }
+    }
     .container{
         height: 100%;
     }
     .mainslider-item{
         text-align: center;
+        position: relative;
     }
     .swiper-pagination-bullet{
         opacity: 0.502;
@@ -84,9 +99,15 @@
     .mainBanner .swiper-button-prev, .mainBanner .swiper-rtl .swiper-button-next, .mainBanner .swiper-button-next, .mainBanner .swiper-rtl .swiper-button-prev{
         display: none;
     }
+    .mainBanner .banner-desc h2{
+        font-size: 40px;
+    }
 }
 
 @include max-768{
+    .mainBanner .banner-desc h2{
+        font-size: 25px;
+    }
     .mainBanner{
         padding-top: 0;
     }
