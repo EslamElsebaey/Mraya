@@ -14,14 +14,11 @@ $(document).ready(function () {
 
   $(".openMySearch").click(function(){
     $(".search-holder-parent").fadeToggle(200);
-    // $(" .account-text .header-dropdown").removeClass("show-user-account")
     $("body").addClass("overflow-hidden-body") ;
     $(".search-holder-input").addClass("open-search");
   })
   $(".closeSearh-btn").click(function(){
       $(".search-holder-input").removeClass("open-search");
-      // $(".control-section i").removeClass("icon-color");
-      // $(".openMySearch i ").removeClass("icon-color")
       setTimeout(() => {
       $(".search-holder-parent").fadeToggle(300);
     }, 200);
@@ -36,7 +33,6 @@ $(document).ready(function () {
 $(".menu-bars").click(function(){
   $(this).toggleClass("open-bars");
   $("header").toggleClass("filter-drop");
-  // $(" .account-text .header-dropdown").removeClass("show-user-account")
   $("nav").toggleClass("reset-left");
   $("body").toggleClass("overflowHidden");
 })
@@ -52,7 +48,7 @@ $(".menu-bars").click(function(){
 // main Swiper 
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
@@ -85,7 +81,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 
 const bestseller = new Swiper('.bestseller .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -113,7 +109,7 @@ const bestseller = new Swiper('.bestseller .swiper', {
 });
 const specials = new Swiper('.specials .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -141,7 +137,7 @@ const specials = new Swiper('.specials .swiper', {
 });
 const newarrivals = new Swiper('.newarrivals .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -216,7 +212,6 @@ $(window).on("scroll", function () {
     $("header").addClass("fixed");
     if($(window).width() > 768){
       $(".logo img").addClass("logo-img-big");
-      // $("header").addClass("filter-drop");
     }
   } else {
     $("header").removeClass("fixed");
@@ -232,20 +227,11 @@ $(window).on("scroll", function () {
 
 
 
-  
-
-/********************************************************************************* */
- 
-// add color to icons when clicked
-
-
-
 
  })
 
 
  
-/********************************************************************************* */
 
 
 

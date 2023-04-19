@@ -54,7 +54,7 @@ img {
 
 ::-webkit-scrollbar {
   width: 7px;
-  // height: 3px;
+ 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -93,7 +93,6 @@ img {
   animation: progress 6s ease infinite;
   padding: 1px;
   background-color: $main-color;
-  /* border-radius: 4px 4px 4px 4px; */
 }
 @keyframes progress {
   from {

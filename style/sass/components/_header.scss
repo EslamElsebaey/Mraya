@@ -1,8 +1,4 @@
 
-// body{
-//     padding-top: 139px;
-// }
-
 
 .top-header{
     height: 40px;
@@ -140,10 +136,7 @@ margin-inline-start: 25px;
     position: relative;
 }
 
-// .cart i{
-//     font-size: 24px;
-//     color: $main-color;
-// }
+
 
 .number{
     width: 16px;
@@ -232,7 +225,6 @@ margin-inline-start: 25px;
      top: 0;
      left: 0;
      width: 100%;
-    //  height: 100%;
      height: 100vh;
      z-index: 9999;
  }
@@ -278,7 +270,6 @@ html[dir="ltr"]{
     height: 100vh;
     left: 0;
     top: 0;
-    // clip-path: circle(121.2% at 86% 14%);
     clip-path: circle(139.6% at 9% 15%);
     visibility: visible;
     opacity: 1;
@@ -525,9 +516,7 @@ nav{
             margin-inline-start: 20px;
         }
     
-        // .cart, .favourite, .account-text{
-        //     margin-inline-start : 20px;
-        // }
+      
       .search-holder{
         width: 100%;
       }

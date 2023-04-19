@@ -85,7 +85,6 @@ img {
   animation: progress 6s ease infinite;
   padding: 1px;
   background-color: #000;
-  /* border-radius: 4px 4px 4px 4px; */
 }
 
 @keyframes progress {
