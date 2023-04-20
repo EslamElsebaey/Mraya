@@ -80,7 +80,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 
 const bestseller = new Swiper('.bestseller .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -108,7 +108,7 @@ const bestseller = new Swiper('.bestseller .swiper', {
 });
 const specials = new Swiper('.specials .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -136,7 +136,7 @@ const specials = new Swiper('.specials .swiper', {
 });
 const newarrivals = new Swiper('.newarrivals .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   observer: true,
   observeParents: true,
@@ -211,12 +211,12 @@ if($(window).width() < 768){
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 40) {
     $(".search-holder-parent").hide();
-    $("header").addClass("fixed");
+    $("header").addClass("sticky-header");
     if($(window).width() > 768){
       $(".logo img").addClass("logo-img-big");
     }
   } else {
-    $("header").removeClass("fixed");
+    $("header").removeClass("sticky-header");
     if($(window).width() > 768){
       $(".logo img").removeClass("logo-img-big");
     }
