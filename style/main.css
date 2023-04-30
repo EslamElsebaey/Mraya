@@ -99,8 +99,7 @@ img {
 }
 /*preloader*/
 .toTop {
-  width: 40px;
-  height: 40px;
+  padding: 0;
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
   background-color: #ffffff;
   cursor: pointer;
@@ -152,10 +151,13 @@ img {
 }
 .top-header span {
   font-size: 12px;
-  letter-spacing: 2px;
   color: #000000;
   font-weight: 300;
   text-align: center;
+}
+
+html[dir=ltr] .top-header span {
+  letter-spacing: 2px;
 }
 
 .overflowHidden {
@@ -335,9 +337,7 @@ img {
 }
 
 .search-holder-parent {
-  display: none;
-  transition: all linear 0.5s;
-  border-top: 1px solid #cbcbcb;
+  transition: all linear 0.2s;
   border-bottom: 1px solid #cbcbcb;
   position: absolute;
   top: 100%;
@@ -346,6 +346,9 @@ img {
   height: 85px;
   padding: 0;
   background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-25px);
   justify-content: center;
   align-items: flex-start;
   z-index: 10;
@@ -371,6 +374,7 @@ html[dir=ltr] .search-holder input {
 }
 
 header {
+  box-shadow: 0 -1px #e3e3e3 inset;
   padding: 20px 0px;
   background-color: #fff;
   transition: all linear 0.3s;
@@ -1035,7 +1039,7 @@ nav .nav-ul > li a:hover {
 }
 .products .nav-tabs > li {
   float: none;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 .products .nav-tabs .active {
   position: relative;
@@ -1458,6 +1462,12 @@ html[dir=ltr] .message .send {
 
 .translateY-0 {
   transform: translateY(-30px);
+}
+
+.show-search-box {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sticky-header {

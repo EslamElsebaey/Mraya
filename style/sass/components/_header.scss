@@ -13,10 +13,16 @@
     z-index: 2;
     span{
         font-size: 12px;
-        letter-spacing: 2px;
         color: #000000;
         font-weight: 300;
         text-align: center;
+    }
+}
+
+
+html[dir="ltr"]{
+    .top-header span{
+        letter-spacing: 2px;
     }
 }
 
@@ -207,10 +213,7 @@ margin-inline-start: 25px;
     }
 }
 .search-holder-parent{
-    display: none;
-    // transform: translateY(-20px);
-    transition: all linear .5s;
-    border-top: 1px solid #cbcbcb;
+    transition: all linear .2s;
     border-bottom: 1px solid #cbcbcb;
     position: absolute;
     top: 100%;
@@ -219,6 +222,10 @@ margin-inline-start: 25px;
     height: 85px;
     padding: 0;
     background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-25px);
+
     
     //  display: none;
      justify-content: center;
@@ -258,6 +265,7 @@ html[dir="ltr"]{
 
 
 header{
+    box-shadow: 0 -1px #e3e3e3 inset;
     padding: 20px 0px;
     background-color: #fff;
     transition: all linear .3s;

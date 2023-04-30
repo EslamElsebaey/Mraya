@@ -13,11 +13,11 @@ $(document).ready(function () {
   // show and hide search box
 
   $(".openMySearch").click(function(){
-    $(".search-holder-parent").toggle();
+    $(".search-holder-parent").toggleClass("show-search-box");
   })
+
   $(".closeSearh-btn").click(function(){
-      $(".search-holder-parent").toggle();
-   
+    $(".search-holder-parent").removeClass("show-search-box");
   })
 
 
@@ -210,7 +210,7 @@ if($(window).width() < 768){
     
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 40) {
-    $(".search-holder-parent").hide();
+    $(".search-holder-parent").removeClass("show-search-box");
     $("header").addClass("sticky-header");
     $(".top-header").slideUp(300);
     if($(window).width() > 768){

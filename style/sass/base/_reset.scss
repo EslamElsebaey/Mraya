@@ -17,6 +17,12 @@
     transform: translateY(-30px);
   }
 
+  .show-search-box{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
   .sticky-header{
     position: fixed;
