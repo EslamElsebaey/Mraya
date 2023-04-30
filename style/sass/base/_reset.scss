@@ -17,7 +17,12 @@
     transform: translateY(-30px);
   }
 
+
   .sticky-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 10px 0;
     backdrop-filter: saturate(180%) blur(3px);
     background-color: rgba(255, 255, 255, 0.9)
@@ -27,6 +32,22 @@
   }
 
 
+  body {
+    padding-top: 124px;
+  }
+
+
+  @include max-992{
+    body {
+      padding-top: 126.4px;
+    }
+  
+  }
+  @include max-768{
+    body {
+      padding-top: 104px;
+    }
+  }
 
   @include max-768 {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{

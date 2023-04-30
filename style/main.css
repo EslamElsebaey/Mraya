@@ -139,11 +139,16 @@ img {
   }
 }
 .top-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 40px;
   background-color: #f9f8f6;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .top-header span {
   font-size: 12px;
@@ -369,8 +374,8 @@ header {
   padding: 20px 0px;
   background-color: #fff;
   transition: all linear 0.3s;
-  position: sticky;
-  top: 0;
+  position: absolute;
+  top: 40px;
   left: 0;
   width: 100%;
   z-index: 15;
@@ -1456,6 +1461,10 @@ html[dir=ltr] .message .send {
 }
 
 .sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px 0;
   -webkit-backdrop-filter: saturate(180%) blur(3px);
           backdrop-filter: saturate(180%) blur(3px);
@@ -1466,6 +1475,20 @@ html[dir=ltr] .message .send {
   margin-top: -4px;
 }
 
+body {
+  padding-top: 124px;
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    padding-top: 126.4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 104px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     padding-right: 20px;

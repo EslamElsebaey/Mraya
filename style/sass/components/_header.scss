@@ -1,11 +1,16 @@
 
 
 .top-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 40px;
     background-color: #f9f8f6;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
     span{
         font-size: 12px;
         letter-spacing: 2px;
@@ -256,8 +261,8 @@ header{
     padding: 20px 0px;
     background-color: #fff;
     transition: all linear .3s;
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: 40px;
     left: 0;
     width: 100%;
     z-index: 15;

@@ -212,11 +212,13 @@ $(window).on("scroll", function () {
   if ($(window).scrollTop() > 40) {
     $(".search-holder-parent").hide();
     $("header").addClass("sticky-header");
+    $(".top-header").slideUp(300);
     if($(window).width() > 768){
       $(".logo img").addClass("logo-img-big");
     }
   } else {
     $("header").removeClass("sticky-header");
+    $(".top-header").slideDown(300);
     if($(window).width() > 768){
       $(".logo img").removeClass("logo-img-big");
     }
