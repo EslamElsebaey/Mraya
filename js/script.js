@@ -166,6 +166,45 @@ const newarrivals = new Swiper('.newarrivals .swiper', {
 
 
 
+
+
+
+const collections = new Swiper('.collections .swiper', {
+  loop: true,
+  draggable: true,
+  observer: true,
+  observeParents: true,
+  allowTouchMove : false,
+  pagination: {
+    el: '.collections .swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.collections .swiper-button-next ',
+    prevEl: '.collections .swiper-button-prev',
+  },
+
+  breakpoints: {
+  
+    350: {
+      slidesPerView: 1,
+      spaceBetween: 15, 
+      allowTouchMove : true
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30, 
+      allowTouchMove : true
+    } , 
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    } , 
+  }
+});
+
+
+
 /********************************************************************************* */
 
 // to top button
