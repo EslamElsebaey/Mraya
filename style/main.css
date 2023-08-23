@@ -223,8 +223,7 @@ html[dir=ltr] .top-header span {
 }
 
 .cart, .favourite, .account-text, .openMySearch {
-  -webkit-margin-start: 25px;
-          margin-inline-start: 25px;
+  margin-inline-start: 25px;
 }
 
 .cart {
@@ -415,12 +414,10 @@ nav .nav-ul {
   align-items: center;
 }
 nav .nav-ul li:last-child {
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
+  margin-inline-end: 0;
 }
 nav .nav-ul > li {
-  -webkit-margin-end: 25px;
-          margin-inline-end: 25px;
+  margin-inline-end: 25px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -437,8 +434,7 @@ nav .nav-ul > li a:hover {
 }
 
 .openMySearch {
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
+  margin-inline-start: 0;
 }
 
 .openNav-btn {
@@ -508,8 +504,7 @@ nav .nav-ul > li a:hover {
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .nav-ul > li {
-    -webkit-margin-end: 12px;
-            margin-inline-end: 12px;
+    margin-inline-end: 12px;
   }
   .search-holder-input {
     width: 220px;
@@ -590,8 +585,7 @@ nav .nav-ul > li a:hover {
     justify-content: center;
   }
   .cart, .bars, .account-text {
-    -webkit-margin-start: 20px;
-            margin-inline-start: 20px;
+    margin-inline-start: 20px;
   }
   .search-holder {
     width: 100%;
@@ -615,8 +609,7 @@ nav .nav-ul > li a:hover {
   }
   nav .nav-ul > li {
     margin-bottom: 17px;
-    -webkit-margin-end: 0;
-            margin-inline-end: 0;
+    margin-inline-end: 0;
   }
   nav .nav-ul > li a {
     display: flex;
@@ -651,8 +644,7 @@ nav .nav-ul > li a:hover {
     align-items: center;
   }
   .barSearchHolder .openSearch-btn {
-    -webkit-margin-end: 10px;
-            margin-inline-end: 10px;
+    margin-inline-end: 10px;
   }
   html[dir=ltr] .nav-ul > li a {
     font-size: 17px;
@@ -1102,8 +1094,7 @@ nav .nav-ul > li a:hover {
   font-size: 14px;
   text-decoration: line-through;
   color: #808080;
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  margin-inline-start: 10px;
 }
 
 .img-holder {
@@ -1164,8 +1155,7 @@ nav .nav-ul > li a:hover {
     justify-content: center;
   }
   .price-sec .deleted-price {
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
+    margin-inline-start: 0;
   }
   .price-sec .current-price {
     margin-bottom: 7px;
@@ -1246,8 +1236,7 @@ footer {
   align-items: center;
 }
 .footer-items-parent .social a {
-  -webkit-margin-end: 35px;
-          margin-inline-end: 35px;
+  margin-inline-end: 35px;
 }
 .footer-items-parent .social i {
   font-size: 20px;
@@ -1342,8 +1331,7 @@ html[dir=ltr] .message .send {
   justify-content: center;
 }
 .footer-imgs img:first-of-type {
-  -webkit-margin-end: 15px;
-          margin-inline-end: 15px;
+  margin-inline-end: 15px;
 }
 
 .copyright {
@@ -1368,8 +1356,7 @@ html[dir=ltr] .message .send {
   font-weight: 500;
 }
 .tasawk img {
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
+  margin-inline-start: 5px;
 }
 .tasawk:hover {
   text-decoration: none;
